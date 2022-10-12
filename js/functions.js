@@ -93,7 +93,7 @@
      * > calculateTip(0.15, 33.42) // returns 5.013
      */
     function calculateTip(tipPercent, total) {
-        let tipAmount = (total * tipPercent);
+        let tipAmount = total * tipPercent;
         return tipAmount
     }
 
