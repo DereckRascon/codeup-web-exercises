@@ -7,28 +7,43 @@
      * 'names'.
      */
 
+    let names = [ "Dereck", "Kike", "James", "Brielle"];
+
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
 
+    console.log(names.length);
+
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
+    console.log(names[0]);
+    console.log(names[1]);
+    console.log(names[2]);
+    console.log(names[3]);
 
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
+    for(let i = 0; i <= names.length - 1; i++){
+        console.log("name: " + names[i]);
+    }
 
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
+
+    names.forEach(function(name){
+        console.log("name: " + name);
+    });
 
     /**
      * TODO:
@@ -43,5 +58,42 @@
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
+
+    let numbers = [ "1", "2", "3", "4", "5"];
+
+    function firstElement(num){
+        return num[num.length - 5];
+    }
+    console.log("First: " + firstElement(numbers));
+
+    function secondElement(num){
+        return num[num.length - 4];
+    }
+    console.log("Second: " + secondElement(numbers));
+
+
+
+    function lastElement(num){
+        return num[num.length - 1];
+    }
+    console.log("Last: " + lastElement(numbers));
+
+// instructors way below...
+
+function first(arr){
+    return arr[0];
+}
+
+function second(arr){
+    return arr[1];
+}
+
+function last(arr){
+    return arr[arr.length - 1];
+}
+
+console.log(first(names));
+console.log(second(names));
+console.log(last(names));
 
 })();
