@@ -12,13 +12,13 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    // let person = {
-    //     firstName: "Dereck",
-    //     lastName: "Rascon"
-    // };
+    let person = {
+        firstName: "Dereck",
+        lastName: "Rascon"
+    };
 
-    // console.log(person.firstName);
-    // console.log(person.lastName);
+    console.log(person.firstName);
+    console.log(person.lastName);
 
 
     /**
@@ -31,15 +31,15 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    // let person ={};
-    // person.firstName = "Dereck";
-    // person.lastName = "Rascon";
-    //
-    // person.sayHello = function(){
-    //     return("Hello from " + this.firstName + " " + this.lastName + "!" )
-    // }
-    //
-    // console.log(person.sayHello())
+    person ={};
+    person.firstName = "Dereck";
+    person.lastName = "Rascon";
+
+    person.sayHello = function(){
+        return("Hello from " + this.firstName + " " + this.lastName + "!" )
+    }
+
+    console.log(person.sayHello())
 
 
 
@@ -59,22 +59,22 @@
      */
 
 
-    // let shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-    //
-    // shoppers.forEach(function(shopper){
-    //     let actualAmount = shopper.amount;
-    //     let discount = shopper.amount * .12;
-    //     let finalAmount= actualAmount - discount;
-    //     if(actualAmount > 200){
-    //         console.log(shopper.name + " spent $" + actualAmount + " so they get a $" + discount + " discount. The total amount is $" + finalAmount + ".")
-    //     }else{
-    //         console.log(shopper.name + " only spent $" + actualAmount + " so they do not qualify for the discount.")
-    //     }
-    // });
+    let shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function(shopper){
+        let actualAmount = shopper.amount;
+        let discount = shopper.amount * .12;
+        let finalAmount = actualAmount - discount;
+        if(actualAmount > 200){
+            console.log(shopper.name + " spent $" + actualAmount + " so they get a $" + discount + " discount. The total amount is $" + finalAmount + ".")
+        }else{
+            console.log(shopper.name + " only spent $" + actualAmount + " so they do not qualify for the discount.")
+        }
+    });
 
 
 
@@ -129,11 +129,10 @@
         }
 
     ];
-
-    // console.log(books[0].title)
-    // console.log(books[0].author.firstName)
-    // console.log(books[0].author.lastName)
     //
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
     //
 
 
@@ -164,10 +163,11 @@
 
     books.forEach(function(book, i){
         let output ="";
-        output += "Book # " + (i + 1) + "<br>";
-        output += "Title: " + book.title + "<br>";
-        output += "Author: " + book.author.firstName + " " + book.author.lastName + "<br>"
+        output += "Book# " + (i + 1) + " ";
+        output += "Title: " + book.title + " ";
+        output += "Author: " + book.author.firstName + " " + book.author.lastName + " "
         console.log(output);
+        console.log("---")
     })
 
 
@@ -181,5 +181,8 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+
 
 })();
