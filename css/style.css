@@ -1,4 +1,25 @@
 .fancy-header {
-    color: purple; /* single line comment */
+    color: blue; /* single line comment */
     text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+/*body{*/
+/*    background-color:red;*/
+/*}*/
+
+body{
+    height:100vh;
+    background-image:url(../img/crazy.webp);
+    background-size:1500px;
+    background-position-x: center;
+    background-position-y: center;
 }
