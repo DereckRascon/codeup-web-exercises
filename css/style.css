@@ -10,6 +10,22 @@ h1 {
 
 h2{
     text-decoration: underline;
+    color: red;
+}
+div{
+    color:white;
+}
+
+ol{
+    list-style-type:upper-roman;
+    color:white;
+}
+ul{
+    list-style-type:circle;
+    color:white;
+}
+tr{
+    color:white;
 }
 
 /*body{*/
@@ -22,4 +38,5 @@ body{
     background-size:1500px;
     background-position-x: center;
     background-position-y: center;
+    background-color: blue;
 }
