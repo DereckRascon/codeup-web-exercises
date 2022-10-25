@@ -2,8 +2,8 @@
 // Ex. let obj = {name: “Potatoes”, quantity: 2, price: “$7.89"};
 // getPrice(obj); // returns “$7.89”
 
-function objectPrice(obj){
-    return obj.price
+function getPrice(obj){
+    return obj.price;
 }
 
 let potatoes ={
@@ -11,4 +11,29 @@ let potatoes ={
     quantity: 2,
     price: "$7.89"
 };
-console.log(objectPrice())
+
+
+let dereck ={
+    name:"Dereck Rascon",
+    age:"30"
+}
+
+
+console.log(getPrice(potatoes))
+console.log(getPrice(dereck))
+
+function getLongestString(arr) {
+    let longestStr = "";
+    for (let str of arr) {
+        if (str.length > longestStr.length) {
+            longestStr = str;
+        }
+    }
+    return longestStr;
+}
+
+const colors = ["Green", "Blue", "Periwinkle"];
+
+console.log(getLongestString(colors));
+
+
