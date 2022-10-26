@@ -66,7 +66,7 @@
 
     //instructors correct format
     // function isTwo(num){
-    //     return number ===2;
+    //     return number === 2;
     // }
     //
     // console.log(isTwo(random));

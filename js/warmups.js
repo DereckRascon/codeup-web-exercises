@@ -74,14 +74,18 @@ const hamsters = [
         dateOfBirth: "January 14"
     }
 ];
+//
+// function height(hamster) {
+//     let tallest = {heightInMM: 0};
+//     hamster.forEach(function (hamsters) {
+//         if (hamsters.heightInMM > tallest.heightInMM) {
+//             tallest = hamsters;
+//         }
+//     });
+//     return tallest;
+// }
+// console.log(height(hamsters));
 
-function height(hamster) {
-    let tallest = {heightInMM: 0};
-    hamster.forEach(function (hamsters) {
-        if (hamsters.heightInMM > tallest.heightInMM) {
-            tallest = hamsters;
-        }
-    });
-    return tallest;
+function largestHeight(arr){
+
 }
-console.log(height(hamsters));
