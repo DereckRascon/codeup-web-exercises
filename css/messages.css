@@ -8,9 +8,12 @@ body, html {
 
 .message{
     margin: 5px;
+    padding: 5px;
     border: 1px solid lightgrey;
     border-radius: 5px;
 }
+
+/* Just for my knowledge the padding and box-sizing in the code below are not needed because the padding and margin are stated in the .message code.*/
 
 #info{
     box-sizing:border-box;
