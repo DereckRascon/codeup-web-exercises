@@ -19,6 +19,7 @@ div{
 ol{
     list-style-type:upper-roman;
     color:white;
+
 }
 ul{
     list-style-type:circle;
@@ -26,6 +27,35 @@ ul{
 }
 tr{
     color:white;
+}
+
+table, th, td {
+   border-collapse: collapse;
+    border: 1px solid yellow;
+}
+
+a:link{
+    color: aqua;
+    border-bottom: 5px solid;
+}
+a:visited{
+    color: darkred;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: blue;
+}
+img{
+    border-radius: 50%
+}
+
+#center{
+    width: 250px;
+    height: 250px;
+    object-fit:none;
+    object-position: center;
 }
 
 /*body{*/
@@ -39,4 +69,5 @@ body{
     background-position-x: center;
     background-position-y: center;
     background-color: blue;
+    font-family: fantasy;
 }
