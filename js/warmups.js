@@ -2,38 +2,86 @@
 // Ex. let obj = {name: “Potatoes”, quantity: 2, price: “$7.89"};
 // getPrice(obj); // returns “$7.89”
 
-function getPrice(obj){
-    return obj.price;
-}
+// function getPrice(obj){
+//     return obj.price;
+// }
+//
+// let potatoes ={
+//     name: "Potatoes",
+//     quantity: 2,
+//     price: "$7.89"
+// };
+//
+//
+// let dereck ={
+//     name:"Dereck Rascon",
+//     age:"30"
+// }
+//
+//
+// console.log(getPrice(potatoes))
+// console.log(getPrice(dereck))
+//
+// function getLongestString(arr) {
+//     let longestStr = "";
+//     for (let str of arr) {
+//         if (str.length > longestStr.length) {
+//             longestStr = str;
+//         }
+//     }
+//     return longestStr;
+// }
+//
+// const colors = ["Green", "Blue", "Periwinkle"];
+//
+// console.log(getLongestString(colors));
 
-let potatoes ={
-    name: "Potatoes",
-    quantity: 2,
-    price: "$7.89"
-};
+// TODO
+//Write a function that takes in an array of objects and returns the object with the largest height property.
 
 
-let dereck ={
-    name:"Dereck Rascon",
-    age:"30"
-}
 
-
-console.log(getPrice(potatoes))
-console.log(getPrice(dereck))
-
-function getLongestString(arr) {
-    let longestStr = "";
-    for (let str of arr) {
-        if (str.length > longestStr.length) {
-            longestStr = str;
-        }
+const hamsters = [
+    {
+        name: "Hamtaro",
+        heightInMM: 86,
+        fur: ['orange', 'white'],
+        gender: "male",
+        dateOfBirth: "August 6"
+    } , {
+        name: "Bijou",
+        heightInMM: 75,
+        fur: ['white'],
+        gender: "female",
+        dateOfBirth: "July 10"
+    } , {
+        name: "Oxnard",
+        heightInMM: 100,
+        fur: ['grey', 'white'],
+        gender: "male",
+        dateOfBirth: "May 3"
+    } , {
+        name: "Boss",
+        heightInMM: 120,
+        fur: ['brown', 'white'],
+        gender: "male",
+        dateOfBirth: "September 21"
+    } , {
+        name: "Snoozer",
+        heightInMM: 85,
+        fur: ['brown', 'white', "pink"],
+        gender: "male",
+        dateOfBirth: "January 14"
     }
-    return longestStr;
+];
+
+function height(hamster) {
+    let tallest = {heightInMM: 0};
+    hamster.forEach(function (hamsters) {
+        if (hamsters.heightInMM > tallest.heightInMM) {
+            tallest = hamsters;
+        }
+    });
+    return tallest;
 }
-
-const colors = ["Green", "Blue", "Periwinkle"];
-
-console.log(getLongestString(colors));
-
-
+console.log(height(hamsters));
