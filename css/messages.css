@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message{
+    margin: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+#info{
+    box-sizing:border-box;
+    padding: 5px;
+    color: #3f0e90;
+    background-color: #cbdcff;
+}
+
+#success{
+    box-sizing: border-box;
+    padding: 5px;
+    color: #076e33;
+    background-color: #c3f7db;
+
+}
+
+#warning{
+    box-sizing: border-box;
+    padding: 5px;
+    color: #bab15b;
+    background-color: #faffc7;
+}
+
+#error{
+    box-sizing: border-box;
+    padding: 5px;
+    color: #8b0c23;
+    background-color: #ffd0d6;
+}
