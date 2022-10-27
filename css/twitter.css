@@ -47,6 +47,7 @@ a {
 .profile {
     background: var(--light-bg);
     height: 80px;
+    position: relative;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -79,7 +80,7 @@ a {
 .profile-image{
     position: absolute;
     /*float: left;*/
-    top: 240px;
+    top: -28px;
 }
 
 .profile-form{
@@ -106,7 +107,7 @@ a {
 }
 
 .container {
-    padding-top: 2em;
+    margin-top: 2em;
 }
 
 .media{
