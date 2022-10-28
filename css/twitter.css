@@ -79,13 +79,12 @@ a {
 
 .profile-image{
     position: absolute;
-    /*float: left;*/
     top: -28px;
 }
 
 .profile-form{
     float: right;
-    line-height: 85px;
+    line-height: 80px;
 }
 
 .profile-details{
@@ -112,7 +111,7 @@ a {
 
 .media{
     width: 100%;
-    background-color: #E0FFFF;
+    background-color: var(--light-bg);
     border-bottom: 1px solid var(--separator-color);
     padding: .5em;
     overflow: auto;
@@ -126,12 +125,13 @@ a {
 }
 
 .media-body{
-    float: right;
+    float: left;
     width: calc(100% - 50px);
 }
 
 .profile-item{
-
+    padding: 0;
+    list-style: none;
 }
 
 .profile-entry{
