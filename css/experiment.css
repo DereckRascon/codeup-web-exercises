@@ -1,0 +1,43 @@
+
+.fancy-header {
+    color: darkblue;
+    margin: 0;
+
+}
+ol {
+    list-style-type: upper-roman;
+}
+
+body{
+    background-color: lightcoral;
+    color: blue;
+}
+
+h1{
+    text-align: center;
+}
+nav i{
+    display: inline-block;
+    padding: .25em;
+}
+
+nav li{
+    padding:.25em;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+}
+ul li:nth-child(4){
+    margin-left:auto;
+}
+
+img{
+    border-radius: 50%;
+}
+
