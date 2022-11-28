@@ -25,7 +25,7 @@
 
 $(function(){
     $("h1").click(function(){
-        $(this).css("background-color", "blue");
+        $(this).css("background", "blue");
     });
 
     $("p").dblclick(function(){
