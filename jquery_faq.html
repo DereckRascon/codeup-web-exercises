@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
 
     <title>Jquery_Faq</title>
+    <style>
+        .invisible{
+                visibility: hidden;
+            }
+        *{
+            background-color: aqua;
+        }
+        .style{
+            border-color: crimson;
+            padding: 2px;
+        }
+
+    </style>
 </head>
 <body>
 <main>
@@ -13,31 +26,94 @@
 
 <dl>
     <dt>How big is the Grand Canyon?</dt>
-    <dd>That depends on how you look at it. THe park includes over a million acres of land</dd>
+    <dd class="invisible">That depends on how you look at it. The park includes over a million acres of land, 1,218,375.54 acres to be exact.</dd>
     <br>
     <dt>How old is the Canyon?</dt>
+    <dd class="invisible">The Grand Canyon started forming only in the past 5 or 6 million years. Geologically speaking, Grand Canyon is very young. </dd>
     <br>
-    <dt>WHen is the best time to visit the Grand Canyon?</dt>
+    <dt>When is the best time to visit the Grand Canyon?</dt>
+    <dd class="invisible">The best time to visit would early spring or late fall. You can expect heavier crowds in the spring, summer and fall months.</dd>
     <br>
     <dt>How hard is it to hike into the Grand Canyon?</dt>
+    <dd class="invisible">Hiking in the Grand Canyon is so demanding that even people in excellent condition often emerge sore and fatigued. Yet it has been hiked by small children, senior citizens, and people with physical disabilities.</dd>
     <br>
     <dt>What is the weather like at the Grand Canyon?</dt>
+    <dd class="invisible">Summer temperatures on the South Rim are relatively pleasant (50°s - 80°s F; 10°s to high 20°s C) but inner canyon temperatures are extreme. Daytime highs at the river, 5000 feet below the rim, often exceed 100° F (38° C). Winter conditions at the South Rim can be extreme: expect snow, icy roads, and possible road closures. Temperatures are low, and with the wind-chill factor can at times drop below 0° F (-18° C).</dd>
     <br>
     <dt>Does it cost anything to enter the Grand Canyon National Park?</dt>
+    <dd class="invisible">Yes, entrance fees to the park is $35 per private vehicle, $30 per motorcycle, $20 pedestrian or cyclist; fees for commercial bus/tour van passengers vary.</dd>
     <br>
     <dt>What kind of activities are available at the Grand Canyon? </dt>
+    <dd class="invisible">Some activities you can find at the Grand Canyon include hiking, rafting trips, backpacking, mule trips or horseback rides, camping, guided tours and stargazing.</dd>
     <br>
     <dt>Do I need a permit to hike the Grand Canyon?</dt>
+    <dd class="invisible">Permits are not required for day hikes below the rim, but you must obtain a backcountry permit if you plan on camping overnight.</dd>
     <br>
     <dt>Where can I camp in the Grand Canyon?</dt>
+    <dd class="invisible">There are several developed campgrounds in Grand Canyon National Park. Advanced reservations can be made for Mather Campground on the South Rim (open all year), and North Rim Campground (a short season May 15 through October 31). Camping at Desert View Campground is on a first-come, first-serve basis (the campground season usually ends mid-October).</dd>
     <br>
     <dt>When does the North Rim close?</dt>
+    <dd class="invisible">Because winter weather occurs earlier at the North Rim, it has a short season. Lodging, restaurants and shops are open May 15 through Oct. 15, 2016 each year. Even though it is not possible to drive vehicles to the North Rim during the winter, hikers, snowshoers and cross country skiers are able to enter the North Rim of the park through the winter months, provided backcountry permits have been obtained. Personal snowmobiles are not permitted inside the park. The North Rim reopens on May 15 of every year.</dd>
 </dl>
+<button class="style" id="btn-1" href="#"> Click me to make words appear and disappear!</button>
+<hr>
+<h1>Different National Parks</h1>
+<h3>Yellowstone National Park</h3>
+<ul>
+    <li>Yellowstone encompasses 3,472 square miles (2,221,766 acres) which makes it larger than Rhode Island and Delaware combined.</li>
+    <li>There are more than 10,000 hydrothermal features in Yellowstone. The four types of thermal features are geysers, hot springs, mud pots, and fumaroles.</li>
+    <li>Yellowstone is home to more than 500 active geysers (more than half the world’s geysers).</li>
+    <li>Yellowstone Lake has 131.7 sq. miles of surface area and 141 miles of shoreline. It is the largest high elevation lake in North America.</li>
+</ul>
+
+<h3>Yosemite National Park</h3>
+<ul>
+    <li>Yosemite Is Famous for Its Giant Sequoia Trees</li>
+    <li> A Scottish Writer Established the Park</li>
+    <li>Yosemite Experiences a Mediterranean Climate</li>
+    <li>Yosemite Valley Was Formed by Glaciers</li>
+</ul>
+
+<h3>Guadalupe Mountain National Park </h3>
+<ul>
+    <li>Guadalupe Mountains National Park covers a total area of 86,416 acres</li>
+    <li>Guadalupe Mountains was made a national park on October 15, 1966</li>
+    <li>The highest elevation found in Guadalupe Mountains is 8,751 feet on Guadalupe Peak</li>
+    <li>Guadalupe Mountains National Park lies in the Mountain time zone</li>
+</ul>
+<button class="style" id="btn-2" href="#"> Click me to make changes happen!</button>
+
 
 
 
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $("#btn-1").click(function(e){
+        e.preventDefault();
+        $("dd").toggleClass("invisible")
+    });
+
+    $("dt").click(function(){
+        $(this).css("background-color", "Yellow");
+    });
+
+    $("#btn-2").click(function(){
+        $("ul").each(function (){
+            $(this).children().last().toggleClass("yellow-bg");
+        });
+    });
+    $("h3").click(function(){
+        $(this).next().children().css("font-weight", "bold");
+    });
+
+    $("li").click(function(){
+      $(this).parent().children().first().css("color", "blue");
+    });
+
+
+
+</script>
 </body>
 </html>
