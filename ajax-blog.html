@@ -6,10 +6,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<h3>Add you Blog Below</h3>
-    <div class="card">
-        <div id="post" class="card-header">
-           <input type="text" id="Your title">
+<h3>Add your Blog Below</h3>
+    <div class="container">
+        <div id="post">
+
         </div>
     </div>
 
@@ -18,11 +18,24 @@
 
 <script>
     (function() {
-        "use strict";
 
-        $.get("data/blog.json").done(function(data){
-            console.log(data)
+        $.ajax("../data/blog.json").done(function(data){
+            // console.log(data)
+            let str = "";
+            data.forEach(function(post){
+                str += "<article>";
+                str += "<h1>" + post.title + "</h1>";
+                str += "<h4>Published on: " + post.date + "</h4>"
+                str += "<p>" + post.content + "</p>"
+                str += "<ul>";
+                post.categories.forEach(function(category){
+                    str += "<li>" + category + "</li>"
+                });
+                str += "</ul></article>"
+            });
+            $('#post').html(str);
         })
+
 
 
     })();
