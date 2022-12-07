@@ -43,28 +43,20 @@
 
             $.each(data, function(index, tool){
                 let content = "<tr>";
-                content += "<td>";
-                content += tool.title;
-                content += "<td>";
+                content += "<td>" + tool.title + "</td>";
 
-                content += "<td>";
-                content += tool.quantity;
-                content += "<td>";
+                content += "<td>" + tool.quantity + "</td>";
 
-                content += "<td>";
-                content += tool.price;
-                content += "<td>";
+                content += "<td>$" + tool.price + "</td>";
 
-                content += "<td>";
-                content += tool.categories;
-                content += "<td>";
+                content += "<td>" + tool.categories.join(', ') + "</td>";
 
                 content += "</tr>";
 
                 $('#insertProducts').append(content);
             });
         });
-    }
+    }gi
     getTools();
 
     $('#btn').click(function(){
