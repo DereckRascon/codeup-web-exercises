@@ -39,6 +39,8 @@ const users = [
 
 const threeOrMore = users.filter(user => {
     return user.languages.length >=3;
+
+//Another way to wrtie it: const threeOrMore = user.filter(user => user.languages.length >=3);
 });
 console.log(threeOrMore)
 
@@ -58,11 +60,12 @@ const longestEmail = users.reduce((longest, user) => {
 }, '');
 console.log(longestEmail)
 
-const allNames = users.reduce((names, user) => {
-    if (names !== ''){
-        names += ', ';
+const allNames = users.reduce((names, user, index) => {
+    if (index === users.length -1){
+        return names + "and ${user.name},";
+    }else{
+     return name + "${user.name}, " ;
     }
-    return names + user.name;
-}, '');
+}, 'Your instructors are: ');
 
 console.log(allNames);
