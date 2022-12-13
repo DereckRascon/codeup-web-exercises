@@ -1,0 +1,100 @@
+
+
+:root {
+    --panelBg: rgb(47, 49, 52);
+    --darkBg: rgb(62, 64, 67);
+}
+
+hr {
+    margin: 0 0 4px 0;
+    border : 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgb(63, 162, 172), rgb(65, 42, 146), rgb(63, 162, 172));
+
+}
+body {
+    background-color: var(--darkBg);
+    color: whitesmoke;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#loading {
+    display: none;
+    position: center;
+    margin: 0 auto;
+}
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+.editMovie{
+    border: 2px solid darkslategrey;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.row {
+    margin-right: 0!important;
+}
+.grow {
+    transition: all .3s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.05);
+}
+.title {
+    text-align: center;
+    margin: 0;
+}
+/*img {*/
+/*    width: 300px;*/
+/*    height: 445px;*/
+/*    padding-right: 5px;*/
+/*}*/
+/*.underImgContainer {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*}*/
+.rating {
+    flex-direction: column;
+}
+.director {
+    flex-direction: column;
+}
+.genre {
+    text-align: center;
+    padding: 10px;
+}
+.description {
+    padding: 12px;
+    font-size: 110%;
+
+}
+
+.hidden1{
+    display: none;
+}
+
+.btn {
+    margin: 10px;
+    background-color: #09090a;
+    color: whitesmoke;
+}
+.textBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.select {
+    padding: 0 10px;
+    height: 38px;
+}
+#delete-movie {
+    margin: 0;
+    background-color: rgb(203, 68, 74);
+}
+.deleteGroup{
+    display: flex;
+    align-items: center;
+}
