@@ -1,4 +1,6 @@
-
+*{
+    padding: 5px;
+}
 
 :root {
     --panelBg: rgb(47, 49, 52);
@@ -18,59 +20,32 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 #loading {
-    display: none;
+    display: block;
     position: center;
     margin: 0 auto;
 }
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.close-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
 #container {
     display: flex;
     justify-content: space-around;
 }
+
 .editMovie{
     border: 2px solid darkslategrey;
     padding: 15px;
     border-radius: 5px;
-
 }
-.row {
-    margin-right: 0!important;
-}
-.grow {
-    transition: all .3s ease-in-out;
-}
-.grow:hover {
-    transform: scale(1.05);
-}
-.title {
-    text-align: center;
-    margin: 0;
-}
-/*img {*/
-/*    width: 300px;*/
-/*    height: 445px;*/
-/*    padding-right: 5px;*/
-/*}*/
-/*.underImgContainer {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-between;*/
-/*}*/
-.rating {
-    flex-direction: column;
-}
-.director {
-    flex-direction: column;
-}
-.genre {
-    text-align: center;
-    padding: 10px;
-}
-.description {
-    padding: 12px;
-    font-size: 110%;
-
-}
-
 .hidden1{
     display: none;
 }
@@ -81,7 +56,7 @@ body {
     color: whitesmoke;
 }
 .textBox {
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     align-items: center;
 }
@@ -95,6 +70,38 @@ body {
     background-color: rgb(203, 68, 74);
 }
 .deleteGroup{
-    display: flex;
     align-items: center;
+}
+
+#table1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+tr,td{
+    text-align: left;
+}
+
+#title-header{
+    color: aquamarine;
+
+}
+#rating-header{
+    color:aquamarine;
+}
+#genre-header{
+    color: aquamarine;
+}
+
+.color{
+    color: aquamarine;
+}
+
+img{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    transition: 0.3s;
 }

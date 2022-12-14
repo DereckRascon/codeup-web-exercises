@@ -8,10 +8,10 @@
 </head>
 <body>
 <nav class="navbar sticky-top navbar-light mb-0">
-    <h2 class="text-light"><i class="fas fa-film"></i>Movie Project</h2>
+    <h2 class="text-dark"><i class="fas fa-film"></i>Movie Project</h2>
     <a class="text-light" href="#">Home</a>
     <a class="text-light" href="#">Movies</a>
-    <a class="text-light" href="#">New & Popular</a>
+    <a class="text-light" href="https://www.cnet.com/pictures/movies-coming-in-2023-from-marvel-netflix-dc-and-more/" target="_blank">New & Popular</a>
     <a class="text-light" href="#">My list</a>
     <a class="text-light" href="#"><i class="fas fa-bell"></i><i class="far fa-user-circle"></i></a>
 </nav>
@@ -19,35 +19,37 @@
 
 <!-- The Modal -->
 <div id="loading" class="loading">
-    <img id="myImg" src="img/loading.jpeg" alt="loading">
+    <img class="center" id="myImg" src="img/loading.jpeg" alt="loading">
 
     <!-- The Close Button -->
+    <div class="close-btn">
     <button class="close">&times;</button>
+    </div>
 
 </div>
 <!--<img src="img" alt="loading.jpeg" class="loading">-->
-<table class="movie-info"></table>
+<table class="movie-info" id="table1"></table>
 
 <!--edit menu-->
-<div class="d-flex row">
+<div class="d-flex justify-content-evenly column">
     <div class="">
         <button id="showEdit" class="btn btn-outline-secondary">Edit</button>
         <select id="selectMenu" class="hidden1 select"></select>
         <div class="hidden1 editMovie" id="editMovie">
-            <label class="newTitle">Change Title</label>
+            <label class="newTitle color">Change Title</label>
             <input type="text" id="newTitle">
             <br>
-            <label class="newGenre">Change Genre</label>
+            <label class="newGenre color">Change Genre</label>
             <input type="text" id="newGenre">
             <br>
-            <lable class="newRating">Change Rating</lable>
+            <lable class="newRating color">Change Rating</lable>
             <input type="text" id="newRating">
             <br>
-            <label class="newDirector">Change Director</label>
+            <label class="newDirector color">Change Director</label>
             <input type="text" id="newDirector">
             <br>
             <div>
-                <label for="newPlot">Change Plot</label>
+                <label class="color" for="newPlot">Change Plot</label>
                 <textarea id="newPlot"></textarea>
             </div>
             <br>
@@ -61,27 +63,27 @@
             <select id="selectMenu2" class="hidden1 select">
                 <option>Delete a Movie</option>
             </select>
-            <button id="delete-movie" class="hidden1 btn btn-danger">Delete Movie</button>
+            <button id="delete-movie" class="hidden1 btn1 btn-danger">Delete Movie</button>
         </div>
     </div>
     <!--Post Menu-->
     <div class="">
         <button id="post-id" class="btn btn-outline-secondary">Post Movie</button>
         <div class="hidden1 editMovie" id="postMovie">
-            <label for="title">Title</label>
+            <label class="color" for="title">Title</label>
             <input type="text" id="title">
             <br>
-            <label for="genre">Genre</label>
+            <label class="color" for="genre">Genre</label>
             <input type="text" id="genre">
             <br>
-            <label for="rating">Rating</label>
+            <label class="color" for="rating">Rating</label>
             <input type="text" id="rating">
             <br>
-            <label for="director">Director</label>
+            <label class="color" for="director">Director</label>
             <input type="text" id="director">
             <br>
             <div class="textBox">
-                <label for="plot">Plot</label>
+                <label class="color" for="plot">Plot</label>
                 <textarea id="plot"></textarea>
             </div>
             <br>
@@ -90,15 +92,13 @@
     </div>
 </div>
 
-
-
-
-
+<!--<img src="" id="movieImages">-->
 
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/6bffcc9069.js" crossorigin="anonymous"></script>
 <script src="js/movies-project.js"></script>
+<script src="js/keys.js"></script>
 </body>
 </html>
